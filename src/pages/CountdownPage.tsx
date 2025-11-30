@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Edit2, Trash2, Calendar, Building, Moon } from "lucide-react";
+import { Plus, Calendar, Building, Moon } from "lucide-react";
 import { Card } from "../components/ui/Card";
 import { Button } from "../components/ui/button";
 import { InputField } from "../components/ui/InputField";
-import { SelectField } from "../components/ui/SelectField";
 import { ModalForm } from "../components/ui/ModalForm";
 import { DataTable } from "../components/ui/DataTable";
 import { AnimatedNumber } from "../components/ui/AnimatedNumber";
@@ -38,13 +37,6 @@ export const CountdownPage: React.FC = () => {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const agents: Array<string> = [
-    // "John Smith",
-    // "Sarah Johnson",
-    // "Mike Wilson",
-    // "Emily Davis",
-    // "David Brown",
-  ];
   const fetchCountdownData = async () => {
     try {
       const data = await getCountdownData();
