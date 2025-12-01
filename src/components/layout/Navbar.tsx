@@ -2,11 +2,7 @@ import React from "react";
 import { Target, Bell, User, Settings } from "lucide-react";
 import { motion } from "framer-motion";
 
-interface NavbarProps {
-  onMenuClick: () => void;
-}
-
-export const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
+export const Navbar: React.FC = () => {
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -16,10 +12,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
       <div className="flex items-center justify-between px-6 py-4">
         {/* Left side */}
         <div className="flex items-center space-x-4">
-          <button
-            onClick={onMenuClick}
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
-          >
+          <button className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
             <Target size={24} className="text-gray-700" />
           </button>
           <div>
