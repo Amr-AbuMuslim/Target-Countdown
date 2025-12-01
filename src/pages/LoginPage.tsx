@@ -29,7 +29,7 @@ export const LoginPage = () => {
       className="h-screen w-full flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1920&q=80')",
+          "url('')",
       }}
     >
       {/* Dark overlay */}
